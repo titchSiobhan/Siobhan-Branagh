@@ -79,6 +79,9 @@
     --button: #aa6a6a66;
     
 }
+.moblie {
+  display: none;
+}
 
 * {
     font-family: lato;
@@ -278,9 +281,9 @@ h2 {
 #project1 {
   grid-column: 1 / 4;
   grid-row: 1 / 10;
-  background-image: url(resources/rawlingsgardencare.png), url(resources/rawlingsgardencare2.png);
-  background-size: contain;
-  background-position: bottom, top;
+  background-image: url(resources/fantasyauthor2.png);
+  background-size: cover;
+  
   background-repeat: no-repeat;
 }
 
@@ -288,7 +291,7 @@ h2 {
 #project2 {
   grid-column: 5 / 9;
   grid-row: 1 / 7;
-  background-image: url(resources/fantasyauthor2.png);
+  background-image: url(resources/gardencare.jpg);
   background-size: cover;
   
   background-repeat: no-repeat;
@@ -316,7 +319,7 @@ h2 {
 #project3 {
   grid-column: 1 / 4;
   grid-row: 11 / 18;
-  background-image: url(resources/mythrootgame.png);
+  background-image: url(resources/Jessies-cafe.png);
   background-size: cover;
   
   background-repeat: no-repeat;
@@ -325,6 +328,8 @@ h2 {
 #project4 {
   grid-column: 5 / 9;
   grid-row: 8 / 18;
+  background-image: url(resources/mythrootgame.png);
+  background-size: cover;
 }
 
 .project-about {
@@ -504,6 +509,7 @@ h2 {
     align-items: center;
     gap: 20px;
     font-size: 1.2rem;
+    justify-content: center;
 }
 
 .fa-envelope{
@@ -525,7 +531,11 @@ h2 {
   .project-grid-container {
     grid-template-columns: 1fr;
     max-width: 300px;
+    grid-template-rows: repeat(18, 70px);
+    gap: 20px;
   }
+
+  
   #project1, #project2, #project3, #project4, #about-card {
     grid-column: 1;
   }
@@ -536,19 +546,29 @@ h2 {
   }
 
   #project2 {
-    grid-row: 5 /8;
+    grid-row: 4 /7;
+    background-size: cover;
   }
 
   #project3 {
-    grid-row: 9 /12;
+    grid-row: 7/11;
   }
 
   #project4 {
-    grid-row: 13 /16;
+    grid-row: 11 /14;
   }
 
   #about-card {
-    grid-row: 17 /20;
+    grid-row: 14 /18;
+  
+  }
+
+  .intro-text {
+    background-color: var(--button);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border: solid 2px var(--main);
   }
   
   .cta-btn {
@@ -668,4 +688,5 @@ h2 {
   .contact-form {
     grid-row: 5;
   }
+  
 }

@@ -72,3 +72,26 @@ function toggleContent2() {
   }
 }
 
+//Collapse Content Container 
+let collapseContent3 = document.getElementsByClassName("hide3")[0];
+//Collapse Header (toggle button)
+let collapseHeader3 = document.getElementsByClassName("title-arrow3")[0];
+/*Since we are using classes only for one elements on the DOM then we access the first element on the array */
+//Always Starts in Hidden Mode
+collapseContent3.style.display = "none";
+//Custom Javascript (You can Implement it in a better way!) (ES6)
+//On Click Event the Header 
+collapseHeader3.addEventListener("click", toggleContent3);
+
+function toggleContent3() {
+  //For Toggling we need to know the current state of the collapse then change it
+  if(collapseContent3.style.display === "none") {
+    //Collapse is already hidden, then show it
+    collapseContent3.style.display = "block";
+    
+  } else if (collapseContent3.style.display === "block") {
+    //Else, hide the collapse
+    collapseContent3.style.display = "none";
+    
+  }
+}

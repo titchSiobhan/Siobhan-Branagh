@@ -71,15 +71,20 @@ project4.addEventListener('mouseleave', () => {
 
 
 project.addEventListener('click', () => {
-    window.location.href = 'projects.html#rawlings';
-});
-
-
-project2.addEventListener('click', () => {
     window.location.href = 'projects.html#fantasy';
 });
 
 
+project2.addEventListener('click', () => {
+    window.location.href = 'projects.html#rawlings';
+});
+
+
 project3.addEventListener('click', () => {
+    window.location.href = 'projects.html#cafe';
+});
+
+
+project4.addEventListener('click', () => {
     window.location.href = 'projects.html#mythrootGames';
 });
