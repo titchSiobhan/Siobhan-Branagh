@@ -454,7 +454,7 @@ h2 {
 #availability {
   grid-column: 2/4;
   grid-row: 3 ;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   
@@ -462,7 +462,7 @@ h2 {
 }
 
 #what-to-include {
-  grid-column: 4/6;
+  grid-column: 2/4;
   grid-row: 3 ;
   display: flex;
   flex-direction: column;
@@ -471,9 +471,12 @@ h2 {
   gap: 10px;
 }
 
+.hidden {
+  display: none;
+}
 .contact-form {
-  grid-column: 2/6;
-  grid-row: 4;
+  grid-column: 4/6;
+  grid-row: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
