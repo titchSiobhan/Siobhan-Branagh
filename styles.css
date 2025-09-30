@@ -690,6 +690,10 @@ h2 {
 
   .contact-form {
     grid-row: 5;
+    grid-column: 2 /6;;
   }
   
+  .reach  {
+    padding: 0;
+  }
 }
