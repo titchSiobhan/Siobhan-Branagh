@@ -10,6 +10,7 @@
   font-style: normal;
 }
 
+
 .lato-thin {
   font-family: "Lato", sans-serif;
   font-weight: 100;
@@ -281,7 +282,7 @@ h2 {
 #project1 {
   grid-column: 1 / 4;
   grid-row: 1 / 10;
-  background-image: url(resources/fantasyauthor2.png);
+  background-image: url(resources/fantasyauthor.webp);
   background-size: cover;
   
   background-repeat: no-repeat;
@@ -291,7 +292,7 @@ h2 {
 #project2 {
   grid-column: 5 / 9;
   grid-row: 1 / 7;
-  background-image: url(resources/gardencare.jpg);
+  background-image: url(resources/gardencare.webp);
   background-size: cover;
   
   background-repeat: no-repeat;
@@ -319,7 +320,7 @@ h2 {
 #project3 {
   grid-column: 1 / 4;
   grid-row: 11 / 18;
-  background-image: url(resources/Jessies-cafe.png);
+  background-image: url(resources/jessies-cafe.webp);
   background-size: cover;
   
   background-repeat: no-repeat;
@@ -328,7 +329,7 @@ h2 {
 #project4 {
   grid-column: 5 / 9;
   grid-row: 8 / 18;
-  background-image: url(resources/mythrootgame.png);
+  background-image: url(resources/mythrootgame.webp);
   background-size: cover;
 }
 
