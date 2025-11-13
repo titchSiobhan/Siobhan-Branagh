@@ -698,3 +698,36 @@ h2 {
     padding: 0;
   }
 }
+
+.odin-logo {
+  width: 10px;
+  height: auto;
+  color: var(--main);
+  display: flex;
+  justify-self: end;
+}
+
+.odin {
+  height: 100px;
+  width: 100px;
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  justify-self: space-evenly;
+}
+
+.odin a {
+  text-decoration: none;
+  color: var(--main);
+  font-weight: 700;
+}
+
+.odin-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  width: 80%;
+  height: auto;
+}
