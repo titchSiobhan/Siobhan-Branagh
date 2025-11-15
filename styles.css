@@ -730,4 +730,5 @@ h2 {
   justify-self: center;
   width: 80%;
   height: auto;
+  flex-wrap: wrap;
 }
