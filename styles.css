@@ -4,71 +4,19 @@
 #383139
 #aa6a6a 
 */
-.bonheur-royale-regular {
+
+@font-face {
   font-family: "Bonheur Royale", cursive;
+  src: url(/asset/fonts/bonheur-royale-v15-latin-regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
-
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
+@font-face {
+  font-family: lato;
+  src: url(/asset/fonts/lato-v25-latin-regular.woff2) format("woff2"), url(/asset/fonts/lato-v25-latin-900.woff2) format("woff2"), url(/asset/fonts/lato-v25-latin-700.woff2);
+  font-weight: 400, 900, 700;
   font-style: normal;
-}
-
-.lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.lato-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.lato-thin-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.lato-light-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.lato-regular-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.lato-bold-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.lato-black-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }
 
 :root {
@@ -708,7 +656,7 @@ h2 {
 }
 
 .odin {
-  height: 100px;
+  height: 25%;
   width: 100px;
   color: var(--text-color);
   text-decoration: none;
@@ -720,6 +668,7 @@ h2 {
   text-decoration: none;
   color: var(--main);
   font-weight: 700;
+  width: 20%;
 }
 
 .odin-container {
