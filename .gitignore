@@ -1,29 +1,4 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Generated .gitignore file for: Node, JavaScript, React, VSCode, Windows, npm, Vite, Babel
+# Generated .gitignore file for: Node, JavaScript, React, VSCode, Windows, npm, Vite
 # Created with FOSSA's DevOps Tools
 
 # Node
@@ -62,9 +37,6 @@ build/
 
 # Vite
 # Add Vite-specific ignores here
-
-# Babel
-# Add Babel-specific ignores here
 
 # Common
 .DS_Store
