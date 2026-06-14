@@ -1,91 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>Siobhan Branagh</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="resources/SB.png">
-        
-        <meta name="description" content="Custom-coded websites by Siobhan Branagh—responsive, accessible, and designed to reflect each brand’s voice. Front-end development with clarity, care, and genre-rich creativity.">
-        <script src="https://kit.fontawesome.com/9e80d3d242.js" crossorigin="anonymous"></script>
-        <script src="index.js" defer></script>
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        
-        <header>
-            <div class="heading">
-                <a href="index.html"><img src="resources/siobhanbranagh.png" alt="SiobhanBranagh" class="logo"></a>
-            <nav class="navbar header-nav">
-                 <div class="hamburger" onClick="hamburgerClick()">&#9776;</div>
-                 <div id="myLinks">
-                <ul>
-                    <li><a href="about.html" class="about" id="about">About</a></li>
-                    <li><a href="projects.html" class="projects" id="projects">Projects</a></li>
-                    <li><a href="contact.html" class="contact" id="contact">Contact</a></li>
-                </ul>
-                </div>
-            </nav>
-            
-            </div>
-            <div class="line"></div>
-        </header>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="hero-logo">
-                    <img src="resources/siobhanbranagh.png" alt="SiobhanBranagh" class="hero-logo">
-                </div>
-                <h1 class="hero-tag">Distinct websites for distinct identities.</h1>
-            </section>
-            <div class="line"></div>
-            
-           <section class="project-grid">
-            <div class="home-projects project-grid-container">
-
-                <div class="front-project project-card" id="project1"><a href="projects.html#fantasy" ></a></div>
-                <div class="front-project project-card" id="project2"><a href="projects.html#rawlings"></a></div>
-                <div class="front-project project-card desktop " id="about-card">
-                    
-                    <p >I'm a front-end developer who turns ideas into high-performing, visually distinct websites. With deep experience in responsive layouts, accessibility, and conversion strategy, I help clients communicate clearly and confidently online.</p>
-                    <p> My builds are fast, flexible, and tailored to each brand’s voice—whether poetic, practical, or somewhere in between.</p>
-                     
-                </div>
-                
-                <div class="front-project project-card" id="project3"><a href="projects.html#cafe"></a></div>
-                <div class="front-project project-card" id="project4"><a href="project.html#mythrootGames"></a></div>
-            </div>
-        </section>
-            
-            
-            <section class="cta-btn cta">
-                <a href="projects.html"><button class="btn cta">View my work</button></a>
-                <a href="contact.html"><button class="btn cta">Let's work together</button></a>
-            </section>
-            <div class="line"></div>
-        </main>
-        <footer>
-             
-             <div class="content">
-                <div class="copy">Siobhan Branagh 2025 &copy;</div>
-            <nav class="footer-nav navbar">
-                <ul>
-                    <li><a href="about.html" class="about">About</a></li>
-                    <li><a href="projects.html" class="projects">Projects</a></li>
-                    <li><a href="contact.html" class="contact">Contact</a></li>
-                </ul>
-            </nav>
-            <ul class="social">
-                <li><a href="https://github.com/titchsiobhan" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <!--<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>-->
-                <li><a href="https://www.linkedin.com/in/siobhan-branagh-web-design/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/branagh.designs" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <div class="odin-logo"><a href="odin-projects.html"><img src="resources/theodinproject.svg" alt=""></a></div>
-            </div>
-                <!--<li><a href="#"><i class="fa-brands fa-jedi-order"></i></a></li>-->
-            </ul>
-            </div>
-        </footer>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/SB.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/9e80d3d242.js" crossorigin="anonymous"></script>
+    
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <title>Siobhan</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
