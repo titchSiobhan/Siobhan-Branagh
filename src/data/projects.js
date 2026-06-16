@@ -49,13 +49,13 @@ const projects = [
 			repoBackend: {url:'https://github.com/titchSiobhan/odin-book-backend', tooltip: 'Backend'},
 		},
 		mainPage: true,
-		shortDescription:'A fullstack social media platform with secure authentication, photo ans text posting, public/private profiles, friends system, adn infinite scroll feed'
+		shortDescription:'A fullstack social media platform with secure authentication, photo and text posting, public/private profiles, friends system, adn infinite scroll feed'
 	}),
 	createProject({
 		id: 2,
 		title: 'Pet Care Simulator',
 		description:
-			'Pet Care Simulator is a cosy, browser‑based game built with vanilla JavaScript where you take care of a virtual pet throughout the day. You manage its hunger, mood, and energy through simple interactive actions, watching its stats change in real time. The project focuses on DOM manipulation, state updates, timed events, and responsive UI behaviour. All wrapped in a playful, approachable design.',
+			'Pet Care Simulator is a cosy, browser‑based game built with vanilla JavaScript where you take care of a virtual pet throughout the day. You manage its hunger, mood, and energy through simple interactive actions, watching its stats change in real time. The project focuses on DOM manipulation, state updates, timed events, and responsive UI behavior. All wrapped in a playful, approachable design.',
 		image: '/petCare.png',
 		tags: ['JavaScript', 'HTML', 'CSS', 'Frontend'],
 		links: {
