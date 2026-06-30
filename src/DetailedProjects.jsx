@@ -31,7 +31,7 @@ function LargeProjectCard() {
 
             <div className="card-content">
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            {project.description.map((d) => (<p key={d}>{d}</p>))}
             <p className='tags'>{project.tags.join(', ')}</p>
             
             </div>

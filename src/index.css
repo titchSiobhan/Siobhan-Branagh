@@ -129,7 +129,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	width: 100%;
+	
 	margin: 2rem 0.4rem;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -173,7 +173,7 @@ aside ul {
 .email a {
 	overflow-wrap: break-word;
 	word-break: break-all;
-	width: 16ch;
+	width: 13ch;
 	text-align: center;
 }
 nav ul {
@@ -189,6 +189,7 @@ nav ul {
 	padding: 0.4rem;
 	border-radius: 5px;
 	width: 100px;
+	height: 40px
 }
 
 .secondary-btn {
@@ -364,7 +365,14 @@ a:hover {
 		transform: scale(1.1, 1.1);
 	}
 }
-
+.language-stack {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
 .languages {
 	display: flex;
 	flex-direction: row;
@@ -489,7 +497,13 @@ svg {
 .stack-name {
 	font-size: 1rem;
 }
-
+.stack-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	align-items: center;
+	padding: 0.2rem 0;
+}
 .about-btn {
 	display: flex;
 	justify-self: center;
@@ -539,7 +553,7 @@ svg {
 		justify-content: space-around;
 		align-content: center;
 		flex-wrap: wrap;
-		height: 100vh;
+		height: 98vh;
 		width: 100vw;
 	}
 

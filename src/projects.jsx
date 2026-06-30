@@ -6,20 +6,14 @@ function ProjectsPage() {
 	const [filter, setFilter] = useState([]);
 	const [toggle, setToggle] = useState(false);
 	const filterList = [
-		'JavaScript',
-		'React',
-		'HTML',
-		'CSS',
-		'Node.js',
-		'Express',
-		'PostgreSQL',
-		'Prisma',
-		'REST API',
-		'JWT Auth',
-		'Cloudinary',
-		'Fullstack',
-		'Frontend',
-		'Backend',
+	 'React',
+  'Typescript',
+  'JavaScript',
+  'Node.js',
+  'Express',
+  'PostgreSQL',
+  'Fullstack',
+  'Game Development'
 	];
 	function addFilterTag(tag) {
 		if (!filter.includes(tag)) {
