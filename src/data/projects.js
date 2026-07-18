@@ -22,6 +22,37 @@ function createProject({
 
 const projects = [
 	createProject({
+		id: 3,
+		title: 'Invoice maker',
+		description: [
+			'This full‑stack invoice maker allows users to manage clients, create detailed invoices, and organise tasks and job information in a clean, structured workflow. Users can upload their company logo, choose custom invoice dates, and generate professional PDF invoices ready for sending.',
+			'The platform includes client and task management, job linking, secure authentication, and a responsive UI. Built with React, TypeScript, Node.js, Express, Prisma, and PostgreSQL, it provides a scalable architecture suitable for real world business use.',
+		],
+		image: '/project-img/invoicemaker.png',
+		tags: [
+			'React',
+			'Typescript',
+			'Node.js',
+			'Express',
+			'PostgreSQL',
+			'Fullstack',
+			'PDF Generation',
+		],
+		links: {
+			repoFrontend: {
+				url: 'https://github.com/titchSiobhan/tracker-frontend',
+				tooltip: 'Frontend',
+			},
+			repoBackend: {
+				url: 'https://github.com/titchSiobhan/tracker-backend',
+				tooltip: 'Backend',
+			},
+		},
+		mainPage: true,
+		shortDescription:
+			'A full‑stack invoice builder where users can manage clients, create invoices with tasks and jobs, upload a company logo, pick custom dates, and export clean PDFs.',
+	}),
+	createProject({
 		id: 1,
 		title: 'Barely Social',
 		description: [
