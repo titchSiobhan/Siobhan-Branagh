@@ -13,7 +13,9 @@ function ProjectsPage() {
   'Express',
   'PostgreSQL',
   'Fullstack',
-  'Game Development'
+  'Game Development',
+  "C#",
+  'Console Applications',
 	];
 	function addFilterTag(tag) {
 		if (!filter.includes(tag)) {

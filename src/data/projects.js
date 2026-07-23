@@ -116,6 +116,18 @@ const projects = [
 		shortDescription:
 			'A lightweight roguelike RPG text‑based sim where you create a character, explore the realm, complete quests, fight monsters, and survive a world driven by luck, events, and dynamic encounters.',
 	}),
+	createProject({
+		id: 4,
+		title: "Blackjack",
+		description:["A fully structured C# console Blackjack game built with proper OOP design, including a deck system, card evaluation, Ace handling, dealer behaviour, and player actions such as hit and stand. Designed to demonstrate clean architecture, namespaces, and multi‑file project organisation while implementing real casino rules."],
+		image:"/project-img/blackjack.png",
+		tags:["C#", "Console Application", "Game Development"],
+		links: {repo: {
+			url: "https://github.com/titchSiobhan/blackjack", tooltip: "Repo"
+		}},
+		mainPage: false,
+		shortDescription: "A multi‑file C# Blackjack game featuring a real 52 card deck, dealer logic, and clean object‑oriented architecture."
+	})
 ];
 
 export default projects;
