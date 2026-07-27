@@ -268,6 +268,28 @@ a:hover {
 	border-radius: 8px;
 	margin: auto;
 }
+.slideshow {
+    width: 70%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+       display: flex;
+   justify-content: center;
+	transition: all 2s ease-in-out;
+	
+	margin: 0 1rem ;
+}
+.slideshow img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; 
+   display: flex;
+   justify-content: center;
+
+}
+
 .waveOne {
 	display: block;
 	position: absolute;

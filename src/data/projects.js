@@ -28,7 +28,7 @@ const projects = [
 			'This full‑stack invoice maker allows users to manage clients, create detailed invoices, and organise tasks and job information in a clean, structured workflow. Users can upload their company logo, choose custom invoice dates, and generate professional PDF invoices ready for sending.',
 			'The platform includes client and task management, job linking, secure authentication, and a responsive UI. Built with React, TypeScript, Node.js, Express, Prisma, and PostgreSQL, it provides a scalable architecture suitable for real world business use.',
 		],
-		image: '/project-img/invoicemaker.png',
+		image: ['/project-img/invoicemaker.webp'],
 		tags: [
 			'React',
 			'Typescript',
@@ -58,7 +58,7 @@ const projects = [
 		description: [
 			'This fullstack social media platform that allows users to create their own profile, post either images or text posts, and choose their profile privacy setting. Each user is able to search others, send friend request, and switch their feed to friends only or view global posts. The platform with secure authentication, responsive UI and scalable backend architecture',
 		],
-		image: '/project-img/barely_social.png',
+		image: ['/project-img/barely_social.webp'],
 		tags: [
 			'React',
 			'JavaScript',
@@ -89,7 +89,7 @@ const projects = [
 			'This project is a small browser based rouglelike RPG where you can create your own character where the progress is saved locally using client side storage. They are able to go on silly quests, encounter random events and fight enemies. Every run plays out differently due to a luck tier system, weighted outcomes and procedural event generation.',
 			'The game is built with React and Typescript, using components and clean stat management to keep the game logic modular. The events, quests and fights are handled through a separate system that communicates through a shared system',
 		],
-		image: '/project-img/Questage_desktop.png',
+		image: ['/project-img/Questage_desktop.webp'],
 		tags: [
 			'React',
 			'Typescript',
@@ -120,13 +120,28 @@ const projects = [
 		id: 4,
 		title: "Blackjack",
 		description:["A fully structured C# console Blackjack game built with proper OOP design, including a deck system, card evaluation, Ace handling, dealer behaviour, and player actions such as hit and stand. Designed to demonstrate clean architecture, namespaces, and multi‑file project organisation while implementing real casino rules."],
-		image:"/project-img/blackjack.png",
+		image:["/project-img/blackjack.webp"],
 		tags:["C#", "Console Application", "Game Development"],
 		links: {repo: {
 			url: "https://github.com/titchSiobhan/blackjack", tooltip: "Repo"
 		}},
 		mainPage: false,
 		shortDescription: "A multi‑file C# Blackjack game featuring a real 52 card deck, dealer logic, and clean object‑oriented architecture."
+	}),
+	createProject({
+		id: 5,
+		title: "Alchemy Brewer",
+		description:["Alchemy Brewer is a C# console application built around a simple crafting gameplay loop. Players visit a dynamically generated shop to purchase ingredients and recipe cards, manage their inventory, discover hidden potion combinations, brew new potions, and sell them for gold.", "The game is driven by JSON data, allowing new ingredients, recipes, and potions to be added without changing the core game logic. The project focuses on object-oriented design, separating models and services to create a clean, maintainable codebase while demonstrating inventory management, game state handling, and data-driven application development."],
+		image:["/project-img/alchemy-brewer.webp", "/project-img/alchemy-brewer-two.webp"],
+		tags: [ "C#", "Console Application", "Game Development", "JSON", ".NET", "OOP"],
+		links:{
+			repo: {
+				url:"https://github.com/titchSiobhan/alchemy-brewer",
+				tooltip:"Repo"
+			}
+		},
+		mainPage: true,
+		shortDescription:"A C# console-based crafting game where players buy ingredients, discover recipes, brew potions, and sell their creations for gold."
 	})
 ];
 

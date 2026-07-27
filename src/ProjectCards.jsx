@@ -62,7 +62,11 @@ function ProjectCard({ project }) {
 					}
 				})}
 			>
-				<img src={project.image} alt={project.title} />
+				{project.image.length > 1 ? (
+					<img src={project.image[0]} alt={project.title} />
+				) : (
+					<img src={project.image} alt={project.title} />
+				)}
 				<div className="card-content">
 					<h3>{project.title}</h3>
 					<p>{project.shortDescription}</p>

@@ -1,12 +1,45 @@
 
 import projects from "./data/projects";
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function LargeProjectCard() {
     const { id } = useParams()
     const projectId = Number(id)
     const project = projects.find(p => p.id === projectId)
     const navigate = useNavigate()
+ 
+useEffect(() => {
+    if (!project || !project.image || project.image.length <= 1) return;
+
+    const slideshowEl = document.querySelector('.slideshow');
+    let currentIndex = 0;
+    let interval;
+    let timeout;
+
+    //  Preload images
+    project.image.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+
+    console.log('project.image');
+
+    timeout = setTimeout(() => {
+        interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % project.image.length;
+            slideshowEl.style.backgroundImage = `url(${project.image[currentIndex]})`;
+        }, 4000);
+    }, 300);
+
+    return () => {
+        clearTimeout(timeout);
+        clearInterval(interval);
+    };
+}, [project]);
+
+
+
 
      return (
         <>
@@ -27,7 +60,13 @@ function LargeProjectCard() {
 						))}
                         </div>
             <div className='project-content'>
+                {project.image.length > 1 ? (
+                <div    className="slideshow" style={{ backgroundImage: `url(${project.image[0]})` }}></div>
+           
+            ) : (
+           
             <img src={project.image} alt={project.title} />
+            )}
 
             <div className="card-content">
             <h3>{project.title}</h3>

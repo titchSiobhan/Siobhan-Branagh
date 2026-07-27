@@ -16,6 +16,7 @@ function ProjectsPage() {
   'Game Development',
   "C#",
   'Console Applications',
+  "OOP"
 	];
 	function addFilterTag(tag) {
 		if (!filter.includes(tag)) {
