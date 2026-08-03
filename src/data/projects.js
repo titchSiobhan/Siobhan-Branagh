@@ -21,6 +21,7 @@ function createProject({
 }
 
 const projects = [
+	
 	createProject({
 		id: 3,
 		title: 'Invoice maker',
@@ -51,6 +52,22 @@ const projects = [
 		mainPage: true,
 		shortDescription:
 			'A full‑stack invoice builder where users can manage clients, create invoices with tasks and jobs, upload a company logo, pick custom dates, and export clean PDFs.',
+	}),
+	createProject({
+		id: 6,
+		title: "Life Simulator",
+		description: ["Built to explore object-oriented design and simulation systems in C#.", "The application models households through a custom time system, tracking ageing, birthdays, wages, bills, and random events. Data is saved and loaded using JSON, with separate systems handling households, finances, and simulation logic.", "The project focuses on creating interconnected systems that work together to produce changing outcomes over long periods of simulated time."],
+		image:["/project-img/HouseStats.webp", "/project-img/logPage.webp", "/project-img/SimStats.webp"],
+		tags: ["C#", ".NET", "OOP",
+			"#JSON", "Console Application", "Simulation"
+		],
+		links:{
+			repo: {
+				url:"https://github.com/titchSiobhan/house-sim", tooltip: "Repo"
+			}
+		},
+		mainPage: true,
+		shortDescription: "A C# console-based life simulation where households are generated and simulated over time, managing people, homes, finances, and events."
 	}),
 	createProject({
 		id: 1,
