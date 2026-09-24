@@ -1,22 +1,22 @@
-import ProjectList from './ProjectCards';
-import projects from './data/projects';
+import ProjectList from './ProjectList';
+import projects from './data/projects.json';
 import { useState } from 'react';
 
 function ProjectsPage() {
 	const [filter, setFilter] = useState([]);
 	const [toggle, setToggle] = useState(false);
 	const filterList = [
-	 'React',
-  'Typescript',
-  'JavaScript',
-  'Node.js',
-  'Express',
-  'PostgreSQL',
-  'Fullstack',
-  'Game Development',
-  "C#",
-  'Console Applications',
-  "OOP"
+		'React',
+		'Typescript',
+		'JavaScript',
+		'Node.js',
+		'Express',
+		'PostgreSQL',
+		'Fullstack',
+		'Game Development',
+		'C#',
+		'Console Applications',
+		'OOP',
 	];
 	function addFilterTag(tag) {
 		if (!filter.includes(tag)) {
@@ -37,7 +37,7 @@ function ProjectsPage() {
 	function toggleFilter() {
 		setToggle((prev) => !prev);
 	}
-console.log(filteredProjects.length)
+	console.log(filteredProjects.length);
 	return (
 		<>
 			<div id="projects">
@@ -50,33 +50,43 @@ console.log(filteredProjects.length)
 					>
 						Filter
 					</button>
-                    {toggle &&
-                    <div>
-					<h3>Filter by:</h3>
-					{filterList.map((tag, index) => (
-						<button
-							key={index}
-							onClick={() => addFilterTag(tag)}
-							className="primary-btn btn"
-						>
-							{tag}
-						</button>
-					))}
-				{filter.length > 0 &&
-				<div className="filter-tags">
-                    
-					<h3>Filters:</h3>
-					{filter.map((tag, index) => (
-						<p key={index} onClick={() => removeFilterTag(tag)}>
-							{tag}
-							<button className="close">X</button>
-						</p>
-					))}
-				</div>}
-                {filter.length > 0 && <button className="primary-btn btn" onClick={() => setFilter([])}>Clear Filters</button>}
-                {filter.length > 0 && filteredProjects.length === 0 && <p>No projects found</p>}
-                </div> }
-                </div>
+					{toggle && (
+						<div>
+							<h3>Filter by:</h3>
+							{filterList.map((tag, index) => (
+								<button
+									key={index}
+									onClick={() => addFilterTag(tag)}
+									className="primary-btn btn"
+								>
+									{tag}
+								</button>
+							))}
+							{filter.length > 0 && (
+								<div className="filter-tags">
+									<h3>Filters:</h3>
+									{filter.map((tag, index) => (
+										<p key={index} onClick={() => removeFilterTag(tag)}>
+											{tag}
+											<button className="close">X</button>
+										</p>
+									))}
+								</div>
+							)}
+							{filter.length > 0 && (
+								<button
+									className="primary-btn btn"
+									onClick={() => setFilter([])}
+								>
+									Clear Filters
+								</button>
+							)}
+							{filter.length > 0 && filteredProjects.length === 0 && (
+								<p>No projects found</p>
+							)}
+						</div>
+					)}
+				</div>
 
 				<ProjectList projects={filteredProjects} />
 			</div>

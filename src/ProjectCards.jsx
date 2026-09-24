@@ -1,4 +1,4 @@
-import projects from './data/projects';
+import projects from './data/projects.json';
 import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import LargeProjectCard from './DetailedProjects';
@@ -18,36 +18,9 @@ function ProjectCard({ project }) {
 	}
 
 
-	// function LargeProjectCard() {
-	//     const { id } = useParams()
-	//     const projectId = Number(id)
-	//     const project = projects.find(p => p.id === projectId)
-	//     const navigate = useNavigate()
-
-	//      return (
-	//         <>
-	//         <div className='large-project-card' >
-	//             <button className="close" onClick={() => navigate('/projects')}>X</button>
-	//             <div>
-	//             <img src={project.img} alt="An image should be here" />
-	//             <div className="card-content">
-	//             <h3>{project.title}</h3>
-	//             <p>{project.description}</p>
-	//             <p>{project.tags.join(', ')}</p>
-	//             <div className="btns">
-	//             <a href={project.links.live} target='_blank'><button className='primary-btn'>Live</button></a>
-	//             <a href={project.links.repo} target="_blank"> <button className='secondary-btn'>Repo</button></a>
-	//             </div>
-	//             </div>
-	//             </div>
-	//         </div>
-
-	//          </>
-	//     );
-	// }
-
 	
 	const navigate = useNavigate();
+	
 	return (
 		<>
 			<div
@@ -56,12 +29,14 @@ function ProjectCard({ project }) {
 				}
 				onMouseEnter={seeMore}
 				onMouseLeave={hideMore}
-				onClick={() => navigate(`/projects/${project.id}`, {
+				
+				onClick={() => navigate(`/${project.type}/${project.id}`, {
 					state: {
 						canGoBack: true
 					}
 				})}
 			>
+				
 				{project.image.length > 1 ? (
 					<img src={project.image[0]} alt={project.title} />
 				) : (
@@ -70,7 +45,8 @@ function ProjectCard({ project }) {
 				<div className="card-content">
 					<h3>{project.title}</h3>
 					<p>{project.shortDescription}</p>
-					<p>{project.tags.join(', ')}</p>
+					{project.tags && <p>Tags: {project.tags.join(', ')}</p>}
+					{/* <p>{project.tags.join(', ')}</p> */}
 					<div className="btns">
 						
 						{Object.entries(project.links).map(([key, value]) => (
@@ -86,19 +62,20 @@ function ProjectCard({ project }) {
 	);
 }
 
+export default ProjectCard;
 
-function ProjectList({ mainPage, projects}) {
+// function ProjectList({ mainPage, projects}) {
 	
-	const visibleProjects = mainPage
-		? projects?.filter((project) => project.mainPage === true)
-		: projects;
-	return (
-		<div>
-			{visibleProjects?.map((project) => (
-				<ProjectCard key={project.id} project={project} />
-			))}
-		</div>
-	);
-}
+// 	const visibleProjects = mainPage
+// 		? projects?.filter((project) => project.mainPage === true)
+// 		: projects;
+// 	return (
+// 		<div>
+// 			{visibleProjects?.map((project) => (
+// 				<ProjectCard key={project.id} project={project} />
+// 			))}
+// 		</div>
+// 	);
+// }
 
-export default ProjectList;
+// export default ProjectList;

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "rawlings-garden-care",
+        "title": "Rawlings Garden Care",
+        "description": ["A responsive website designed and developed for Rawlings Garden Care. The site presents the business and its gardening and landscaping services through a visually focused homepage, image slideshow, and dedicated service sections, built using HTML, CSS, and JavaScript.",
+  "It includes a gallery showcasing previous work, a dedicated contact page, and a footer containing contact details and useful links. Additional features include light and dark modes, responsive layouts, and clear navigation to make the site easy for potential customers to explore and get in touch.", "On mobile and tablet devices, the navigation links are contained within an expandable menu drawer, keeping the interface clean and uncluttered while still providing easy access to the site's pages."] ,
+        "image": ["/project-img/rawlingsgardencare.webp","/project-img/rawlingsgardencare-dark.webp", "/project-img/rawlingsgardencare-gallery.webp", "/project-img/rawlingsgardencare-gallery-single.webp", "/project-img/rawlingsgardencare-services.webp", "/project-img/rawlingsgardencare-service-home.webp"],
+        "links": {
+            "live": {
+                "url": "https://rawlingsgardencare.co.uk/",
+                "tooltip": "Live Link"
+            }
+        },
+        "shortDescription": "A responsive gardening and landscaping website featuring a visual homepage, service sections, project gallery, contact page, and light and dark modes. Designed with responsive navigation for a clean experience across desktop, tablet, and mobile.",
+        "type": "website"
+        
+    }
+]

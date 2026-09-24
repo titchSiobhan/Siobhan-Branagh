@@ -1,6 +1,6 @@
- import projects from './data/projects'
+ import projects from './data/projects.json'
  
-import ProjectList from './ProjectCards';
+import ProjectList from './ProjectList';
 
 import stack from './data/stack'
 

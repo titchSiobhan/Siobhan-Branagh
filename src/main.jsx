@@ -9,6 +9,8 @@ import ContactPage from './contact'
 import LargeProjectCard from './DetailedProjects'
 import Home from './home'
 import ErrorPage from './errorPage'
+import WebsitesPage from './Websites'
+import LargeWebsiteCard from './DetailedWebsite'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,7 +21,9 @@ const router = createBrowserRouter([
       {path: 'about', element: <AboutPage />},
       {path: 'projects', element: <ProjectsPage />},
       {path: 'contact', element: <ContactPage />},
-      {path: 'projects/:id', element: <LargeProjectCard />}
+      {path: 'websites', element: <WebsitesPage />},
+      {type: 'project', path: 'project/:id', element: <LargeProjectCard />},
+      {type: 'website', path: 'website/:id', element: <LargeWebsiteCard />}
       
     ]
   }

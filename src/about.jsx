@@ -36,6 +36,11 @@ function AboutPage() {
 							View my projects
 						</button>
 					</Link>
+					<Link to="/websites">
+						<button className="primary-btn about-btn btn">
+							View my websites
+						</button>
+					</Link>
 				</div>
 
 				<div className="skills">

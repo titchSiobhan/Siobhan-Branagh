@@ -26,6 +26,7 @@ function contactToggleButton() {
                     <li><Link to="/" onClick={toggleNav}>Home</Link></li>
                     <li><Link to="/about" onClick={toggleNav}>About</Link></li>
                     <li><Link to="/projects" onClick={toggleNav}>Projects</Link></li>
+                    <li><Link to="/websites" onClick={toggleNav}>Websites</Link></li>
                     <li><Link to="/contact" onClick={toggleNav}>Contact</Link> </li>
                 </ul> 
                  

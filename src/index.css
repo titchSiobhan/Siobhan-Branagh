@@ -45,6 +45,7 @@ overflow-x: hidden;
 	height: fit-content;
 	width: 100%;
 	min-height: 100%;
+	
 }
 
 .filter-tags {
@@ -147,7 +148,7 @@ main {
 	grid-row: 2/-1;
 	background-color: var(--bg);
 	position: relative;
-	margin: 15px;
+	margin: 15px 15px 30px 15px;
 	border-radius: 10px;
 	box-shadow: 0 6px 16px var(--text);
 	width: clamp(300px, 95%, 1200px);
@@ -268,20 +269,68 @@ a:hover {
 	border-radius: 8px;
 	margin: auto;
 }
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+	
+}
+
+.nail:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+.nail {
+	transition: ease-in 1s;
+}
+
+.dot {
+	display: none;
+}
+
+.thumbnails img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.thumbnails img.active {
+    opacity: 1;
+    outline: 2px solid pink;
+}
 .slideshow {
-    width: 70%;
+    
     height: 400px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
        display: flex;
-   justify-content: center;
+   justify-content: space-around;
 	transition: all 2s ease-in-out;
 	
 	margin: 0 1rem ;
 }
+
+.fa-angle-left, .fa-angle-right {
+	transition: ease-in-out 1.3s;
+}
+.fa-angle-left:hover, .fa-angle-right:hover {
+	transform: scale(1.5);
+	cursor: pointer;
+	
+}
+.image-gallery-arrows {
+	display: flex;
+	padding: 1rem;
+	width: 100%;
+	font-size: 2rem;
+	justify-content: space-between;
+}
+
 .slideshow img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0; 
@@ -388,22 +437,25 @@ a:hover {
 	}
 }
 .language-stack {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
 	align-items: center;
 	gap: 1rem;
+	width: 30%;
 }
+
+
 .languages {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	font-size: 1.5rem;
 	flex-wrap: wrap;
+	
 }
 img {
-	max-width: 70%;
+	
 	height: auto;
 	border-radius: 8px;
 }
@@ -529,6 +581,7 @@ svg {
 	gap: 0.4rem;
 	align-items: center;
 	padding: 0.2rem 0;
+	width: 40%;
 }
 .about-btn {
 	display: flex;
@@ -560,8 +613,7 @@ svg {
 	display: none;
 }
 
-@media screen and (max-width: 841px) {
-	.nav {
+@media screen and (max-width: 841px) {	.nav {
 		height: 100vw;
 		width: 100vw;
 		position: fixed;
@@ -571,7 +623,7 @@ svg {
 		z-index: 1;
 		background-color: var(--bg);
 		padding: 1rem;
-		transition: 0.6s ease-in-out;
+		transition: 0.6s ease-inl-out;
 	}
 	.nav ul {
 		flex-direction: column;
@@ -579,10 +631,22 @@ svg {
 		justify-content: space-around;
 		align-content: center;
 		flex-wrap: wrap;
-		height: 90vh;
+		height: 90%;
 		width: 100vw;
 	}
+.dot {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	font-size: 2rem;
+	font-weight: 900;
+	
+}
 
+
+.thumbnails {
+	display: none;
+}
 	.nav.active {
 		left: 0;
 	}
@@ -654,7 +718,7 @@ svg {
 
 	main {
 		
-		margin:  70px auto 0 auto;
+		margin:  70px auto 30px auto;
 	}
 
 	.waveOne,
