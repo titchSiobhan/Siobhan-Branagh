@@ -356,6 +356,11 @@ a:hover {
 	animation: wave 8000ms ease-in-out infinite alternate-reverse both;
 	border-bottom: #222 solid 1px;
 }
+@media (prefers-reduced-motion: reduce) {
+	.waveOne, .waveTwo {
+		animation: none
+	}
+}
 
 .waveOne:before {
 	content: '';
